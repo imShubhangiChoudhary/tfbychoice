@@ -1,6 +1,6 @@
 prerequisites:
 1. Need EC2 Instance
-2. git,java,docker,jenkins needs to be installed on EC2
+2. git,java,docker,jenkins,terrafom(plugin or path will be fine) needs to be installed on EC2
 3. Ref: https://github.com/ravdy/DevOps/blob/master/jenkins/jenkins_installation.md
 
 
