@@ -1,3 +1,9 @@
+prerequisites:
+1. Need EC2 Instance
+2. git,java,docker,jenkins needs to be installed on EC2
+3. Ref: https://github.com/ravdy/DevOps/blob/master/jenkins/jenkins_installation.md
+
+
 To get coloured output:
   Install ansi colour plugin inside Jenkins.
   Ref: https://stackoverflow.com/questions/12428585/how-to-use-the-ansicolor-plugin-in-jenkins#
