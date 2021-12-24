@@ -1,0 +1,4 @@
+To get coloured output:
+  Install ansi colour plugin inside Jenkins.
+  Ref: https://stackoverflow.com/questions/12428585/how-to-use-the-ansicolor-plugin-in-jenkins#
+       https://plugins.jenkins.io/ansicolor/
