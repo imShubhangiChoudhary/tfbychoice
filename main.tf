@@ -6,14 +6,15 @@ provider "aws" {
     region = var.region 
 } 
 
-resource "aws_vpc" "first_vpc" {
-     count = "${var.flag == "true" ? 1 : 0 }" 
-     cidr_block = var.cidr_range 
-     tags = { 
-         Name = "vpc-${var.region_code}-${var.project_name}" #interpolation needed here
-     } 
+resource "aws_instance" "web" {
+  count = "${var.flag == "false" ? 1 : 0 }"
+  ami           = "ami-052cef05d01020f1d"
+  instance_type = "t2.micro"
+  tags = {
+    Name = "App-${var.project_name}"
+  }
 }
  resource "aws_s3_bucket" "bucket" {
-      count = "${var.flag == "false" ? 1 : 0 }" 
+      count = "${var.flag == "true" ? 1 : 0 }" 
       bucket = "s3-${var.project_name}" 
 } 
